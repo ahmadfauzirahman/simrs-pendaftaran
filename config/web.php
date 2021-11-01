@@ -3,6 +3,7 @@
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
+
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
@@ -11,10 +12,52 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+    'timeZone' => 'Asia/Jakarta',
+    'language' => 'id_ID',
+    // 'as access' => [
+    //     'class' => 'app\modules\rbac\components\AccessControl',
+    //     'allowActions' => [
+    //         '*',  // uncomment ini untuk non aktifkan AccessControl dari RBAC
+    //         'site/logout',
+    //         'site/login',
+    //         'site/index',
+    //         'site/about',
+    //         // 'user/change-profile',
+    //         // 'api/site/change-profile',
+    //         // 'admin/*',
+    //         'debug/*',
+
+    //         // The actions listed here will be allowed to everyone including guests.
+    //         // So, 'admin/*' should not appear here in the production, of course.
+    //         // But in the earlier stages of your development, you may probably want to
+    //         // add a lot of actions here until you finally completed setting up rbac,
+    //         // otherwise you may not even take a first step.
+    //     ]
+    // ],
     'components' => [
+        // 'authManager' => [
+        //     'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
+        // ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'simrs-pendaftaran',
+            'cookieValidationKey' => md5('syafiraaplikasi'),
+        ],
+        'formatter' => [
+            'dateFormat' => 'php:d-m-Y',
+            'datetimeFormat' => 'php:d-m-Y H:i:s',
+            'timeFormat' => 'php:H:i:s',
+            'decimalSeparator' => ',',
+            'thousandSeparator' => '.',
+            'currencyCode' => 'IDR',
+            // 'numberFormatterSymbols' => [
+            //     NumberFormatter::CURRENCY_SYMBOL => ''
+            // ],
+            // 'numberFormatterOptions' => [
+            //     // NumberFormatter::MIN_FRACTION_DIGITS => 0,
+            //     // NumberFormatter::MAX_FRACTION_DIGITS => 2,
+            // ],
+            'defaultTimeZone' => 'Asia/Jakarta',
+            'nullDisplay' => '',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -43,9 +86,22 @@ $config = [
             ],
         ],
         'db' => $db,
+      
+        'assetManager' => [
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'sourcePath' => null,
+                    'basePath' => '@webroot',
+                    'baseUrl' => '@web',
+                    'js' => [
+                        'theme/assets/js/vendor.min.js',
+                    ]
+                ],
+            ]
+        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'showScriptName' => true,
+            'showScriptName' => false,
             //            'suffix' => '.html',
             'rules' => [
                 '' => 'site/index',
@@ -57,40 +113,16 @@ $config = [
         ],
     ],
     'params' => $params,
+    'modules' => [
+        // 'admin' => [
+        //     'class' => 'app\modules\rbac\Module',
+        // ],
+        'redactor' => 'yii\redactor\RedactorModule',
+        
+    ],
     'container' => [
         'definitions' => [
-            // app\components\number\KyNumber::class => [
-            //     'maskedInputOptions' => [
-            //         // 'prefix' => 'Rp ',
-            //         // 'alias' => 'numeric',
-            //         'positionCaretOnClick' => 'none',
-            //         'groupSeparator' => '.',
-            //         'radixPoint' => ',',
-            //         'allowMinus' => false,
-            //         'unmaskAsNumber' => true, // untuk ambil unmasked value sebagai number,
-            //     ],
-            //     'displayOptions' => ['class' => 'form-control form-control-sm', 'autocomplete' => 'off'],
-            //     'options' => [
-            //         'type' => 'hidden',
-            //         // 'label' => '<label>Saved Value: </label>',
-            //         'label' => null,
-            //         'class' => 'kv-saved',
-            //         'readonly' => true,
-            //         'tabindex' => 1000
-            //     ],
-            //     'saveInputContainer' => ['class' => 'kv-saved-cont'],
-            // ],
 
-            // yii\grid\GridView::class => [
-            //     // 'class' => 'kartik\grid\GridView',
-            //     // 'pjax'=>true,
-            //     'tableOptions' => [
-            //         'class' => 'table table-sm table-striped table-bordered table-hover'
-            //     ],
-            //     'pager' => [
-            //         'class' => 'app\components\GridPager',
-            //     ],
-            // ],
             yii\grid\SerialColumn::class => [
                 'headerOptions' => [
                     // 'class' => 'bg-lightblue'
@@ -172,10 +204,10 @@ $config = [
                     'maxYear' => (int) date('Y') + 0,
                 ],
             ],
-            kartik\select2\Select2::class => [
-                'theme' => 'bootstrap',
-                'size' => 'sm',
-            ],
+            // kartik\select2\Select2::class => [
+            //     'theme' => 'bootstrap',
+            //     'size' => 'sm',
+            // ],
             kartik\number\NumberControl::class => [
                 'maskedInputOptions' => [
                     // 'prefix' => 'Rp ',
@@ -236,14 +268,27 @@ if (YII_ENV_DEV) {
     $config['modules']['debug'] = [
         'class' => 'yii\debug\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
-        'allowedIPs' => ['127.0.0.1', '::1'],
+        //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
-        'allowedIPs' => ['127.0.0.1', '::1'],
+        //'allowedIPs' => ['127.0.0.1', '::1'],
+    ];
+}
+if (!YII_ENV_TEST) {
+    $config['modules']['gii'] = [
+        'class' => 'yii\gii\Module',
+        'generators' => [ // here
+            'crud' => [ // generator name
+                'class' => 'yii\gii\generators\crud\Generator', // generator class
+                'templates' => [ // setting for our templates
+                    'yii2-adminlte3' => '@vendor/hail812/yii2-adminlte3/src/gii/generators/crud/default' // template name => path to template
+                ]
+            ]
+        ]
     ];
 }
 
