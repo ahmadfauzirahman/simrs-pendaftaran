@@ -270,12 +270,21 @@ if (YII_ENV_DEV) {
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
+    
 
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
+        // 'controllerMap' => [
+        //     'batch' => [
+        //         'class' => 'schmunk42\giiant\commands\BatchController',
+        //         'overwrite' => true,
+        //         'modelNamespace' => 'app\\modules\\crud\\models',
+        //         'crudTidyOutput' => true,
+        //     ]
+        // ],
     ];
 }
 if (!YII_ENV_TEST) {

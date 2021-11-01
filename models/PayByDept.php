@@ -9,8 +9,8 @@ use Yii;
  *
  * @property int $pay_by_id
  * @property int $seq
- * @property int|null $unit_id
- * @property int|null $dept_id
+ * @property int $unit_id
+ * @property int $dept_id
  *
  * @property PayBy $payBy
  * @property Unit $unit
@@ -56,8 +56,6 @@ class PayByDept extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PayBy]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPayBy()
@@ -66,8 +64,6 @@ class PayByDept extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Unit]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getUnit()
@@ -76,8 +72,6 @@ class PayByDept extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Dept]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDept()

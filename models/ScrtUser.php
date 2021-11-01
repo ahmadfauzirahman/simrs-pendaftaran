@@ -8,29 +8,29 @@ use Yii;
  * This is the model class for table "scrt_user".
  *
  * @property int $user_id
- * @property string|null $user_name
- * @property string|null $password
- * @property string|null $full_name
- * @property int|null $disable_change_pwd
- * @property int|null $change_pwd_on_login
- * @property int|null $access_expiry_option
- * @property string|null $access_expiry_date
- * @property string|null $notes
- * @property string|null $job_title
- * @property string|null $department
- * @property int|null $group_id
- * @property int|null $policy_id
- * @property int|null $active
- * @property int|null $built_in
- * @property int|null $q_server_id
- * @property int|null $login_show_alerts
- * @property string|null $email
- * @property int|null $opening_module_id
- * @property resource|null $user_signature
- * @property int|null $created_user_id
- * @property string|null $created_time
- * @property int|null $modified_user_id
- * @property string|null $modified_time
+ * @property string $user_name
+ * @property string $password
+ * @property string $full_name
+ * @property int $disable_change_pwd
+ * @property int $change_pwd_on_login
+ * @property int $access_expiry_option
+ * @property string $access_expiry_date
+ * @property string $notes
+ * @property string $job_title
+ * @property string $department
+ * @property int $group_id
+ * @property int $policy_id
+ * @property int $active
+ * @property int $built_in
+ * @property int $q_server_id
+ * @property int $login_show_alerts
+ * @property string $email
+ * @property int $opening_module_id
+ * @property resource $user_signature
+ * @property int $created_user_id
+ * @property string $created_time
+ * @property int $modified_user_id
+ * @property string $modified_time
  *
  * @property ActivityMntnc[] $activityMntncs
  * @property ActivityMntnc[] $activityMntncs0
@@ -412,8 +412,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ActivityMntncs]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getActivityMntncs()
@@ -422,8 +420,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ActivityMntncs0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getActivityMntncs0()
@@ -432,8 +428,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ApInvs]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getApInvs()
@@ -442,8 +436,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ApInvs0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getApInvs0()
@@ -452,8 +444,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ApInvBinds]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getApInvBinds()
@@ -462,8 +452,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ApInvBinds0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getApInvBinds0()
@@ -472,8 +460,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ApPmts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getApPmts()
@@ -482,8 +468,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ApPmts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getApPmts0()
@@ -492,8 +476,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ApSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getApSetups()
@@ -502,8 +484,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ApSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getApSetups0()
@@ -512,8 +492,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ArInvs]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getArInvs()
@@ -522,8 +500,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ArInvs0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getArInvs0()
@@ -532,8 +508,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ArInvs1]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getArInvs1()
@@ -542,8 +516,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ArInvBinds]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getArInvBinds()
@@ -552,8 +524,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ArInvBinds0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getArInvBinds0()
@@ -562,8 +532,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ArPmts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getArPmts()
@@ -572,8 +540,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ArPmts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getArPmts0()
@@ -582,8 +548,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ArSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getArSetups()
@@ -592,8 +556,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ArSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getArSetups0()
@@ -602,8 +564,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Assets]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getAssets()
@@ -612,8 +572,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Assets0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getAssets0()
@@ -622,8 +580,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[AssetGroups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getAssetGroups()
@@ -632,8 +588,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[AssetGroups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getAssetGroups0()
@@ -642,8 +596,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[AssetMvs]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getAssetMvs()
@@ -652,8 +604,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[AssetMvs0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getAssetMvs0()
@@ -662,8 +612,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[AssetSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getAssetSetups()
@@ -672,8 +620,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[AssetSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getAssetSetups0()
@@ -682,8 +628,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[AssetTypes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getAssetTypes()
@@ -692,8 +636,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[AssetTypes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getAssetTypes0()
@@ -702,8 +644,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Banks]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBanks()
@@ -712,8 +652,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Banks0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBanks0()
@@ -722,8 +660,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[BankJournals]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBankJournals()
@@ -732,8 +668,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[BankJournals0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBankJournals0()
@@ -742,8 +676,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[BankSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBankSetups()
@@ -752,8 +684,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[BankSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBankSetups0()
@@ -762,8 +692,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[BillingPmts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBillingPmts()
@@ -772,8 +700,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[BillingPmts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBillingPmts0()
@@ -782,8 +708,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[BillingPmtArs]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBillingPmtArs()
@@ -792,8 +716,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[BloodTypes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBloodTypes()
@@ -802,8 +724,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[BloodTypes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBloodTypes0()
@@ -812,8 +732,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Carriers]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCarriers()
@@ -822,8 +740,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Carriers0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCarriers0()
@@ -832,8 +748,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Cities]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCities()
@@ -842,8 +756,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Cities0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCities0()
@@ -852,8 +764,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Companies]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCompanies()
@@ -862,8 +772,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Companies0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCompanies0()
@@ -872,8 +780,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[CompleteFileExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCompleteFileExts()
@@ -882,8 +788,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[CompleteFileHdXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCompleteFileHdXts()
@@ -892,8 +796,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Cos]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCos()
@@ -902,8 +804,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Cos0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCos0()
@@ -912,8 +812,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[CosItems]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCosItems()
@@ -922,8 +820,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[CosItems0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCosItems0()
@@ -932,8 +828,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Countries]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCountries()
@@ -942,8 +836,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Countries0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCountries0()
@@ -952,8 +844,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[CurHisExchgs]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCurHisExchgs()
@@ -962,8 +852,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[CurHisTaxes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCurHisTaxes()
@@ -972,8 +860,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Currencies]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCurrencies()
@@ -982,8 +868,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Currencies0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCurrencies0()
@@ -992,8 +876,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[CusGroups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCusGroups()
@@ -1002,8 +884,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[CusGroups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCusGroups0()
@@ -1012,8 +892,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Customers]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCustomers()
@@ -1022,8 +900,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Customers0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCustomers0()
@@ -1032,8 +908,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Departments]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDepartments()
@@ -1042,8 +916,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Departments0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDepartments0()
@@ -1052,8 +924,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[DeptItems]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDeptItems()
@@ -1062,8 +932,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[DeptItems0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDeptItems0()
@@ -1072,8 +940,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[DeptUsers]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDeptUsers()
@@ -1082,8 +948,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[DiagOpExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDiagOpExts()
@@ -1092,8 +956,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[DiagOpExts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDiagOpExts0()
@@ -1102,8 +964,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Diets]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDiets()
@@ -1112,8 +972,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Diets0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDiets0()
@@ -1122,8 +980,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Districts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDistricts()
@@ -1132,8 +988,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Districts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDistricts0()
@@ -1142,8 +996,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[DownPayments]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDownPayments()
@@ -1152,8 +1004,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[DownPayments0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDownPayments0()
@@ -1162,8 +1012,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Educations]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getEducations()
@@ -1172,8 +1020,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Educations0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getEducations0()
@@ -1182,8 +1028,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Ethnicities]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getEthnicities()
@@ -1192,8 +1036,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Ethnicities0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getEthnicities0()
@@ -1202,8 +1044,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[EventLogExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getEventLogExts()
@@ -1212,8 +1052,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Exams]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getExams()
@@ -1222,8 +1060,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Exams0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getExams0()
@@ -1232,8 +1068,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FeeAmbulances]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFeeAmbulances()
@@ -1242,8 +1076,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FeeAmbulances0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFeeAmbulances0()
@@ -1252,8 +1084,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FiscalSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFiscalSetups()
@@ -1262,8 +1092,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FiscalSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFiscalSetups0()
@@ -1272,8 +1100,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Folios]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolios()
@@ -1282,8 +1108,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Folios0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolios0()
@@ -1292,8 +1116,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FolioCosChanges]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolioCosChanges()
@@ -1302,8 +1124,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FolioExamValidates]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolioExamValidates()
@@ -1312,8 +1132,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FolioItems]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolioItems()
@@ -1322,8 +1140,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FolioItems0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolioItems0()
@@ -1332,8 +1148,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FolioItemAutos]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolioItemAutos()
@@ -1342,8 +1156,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FolioItemAutos0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolioItemAutos0()
@@ -1352,8 +1164,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FolioMedStatuses]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolioMedStatuses()
@@ -1362,8 +1172,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FolioMedStatuses0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolioMedStatuses0()
@@ -1372,8 +1180,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FolioTherapyItems]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolioTherapyItems()
@@ -1382,8 +1188,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FolioTherapyItems0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolioTherapyItems0()
@@ -1392,8 +1196,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FolioViewHasilXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFolioViewHasilXts()
@@ -1402,8 +1204,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FormControlXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFormControlXts()
@@ -1412,8 +1212,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[FormControlXts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getFormControlXts0()
@@ -1422,8 +1220,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlAccounts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlAccounts()
@@ -1432,8 +1228,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlAccounts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlAccounts0()
@@ -1442,8 +1236,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlBudgets]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlBudgets()
@@ -1452,8 +1244,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlBudgets0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlBudgets0()
@@ -1462,8 +1252,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlJournals]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlJournals()
@@ -1472,8 +1260,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlJournals0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlJournals0()
@@ -1482,8 +1268,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlJournalTypes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlJournalTypes()
@@ -1492,8 +1276,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlJournalTypes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlJournalTypes0()
@@ -1502,8 +1284,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlJschedules]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlJschedules()
@@ -1512,8 +1292,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlJschedules0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlJschedules0()
@@ -1522,8 +1300,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlJtemplates]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlJtemplates()
@@ -1532,8 +1308,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlJtemplates0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlJtemplates0()
@@ -1542,8 +1316,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlSetups()
@@ -1552,8 +1324,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[GlSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGlSetups0()
@@ -1562,8 +1332,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[HkSubUnits]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getHkSubUnits()
@@ -1572,8 +1340,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Icds]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getIcds()
@@ -1582,8 +1348,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Icds0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getIcds0()
@@ -1592,8 +1356,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[IcdProcs]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getIcdProcs()
@@ -1602,8 +1364,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[IcdProcs0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getIcdProcs0()
@@ -1612,8 +1372,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[InvAdjs]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getInvAdjs()
@@ -1622,8 +1380,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[InvAdjs0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getInvAdjs0()
@@ -1632,8 +1388,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[InvAdjAccounts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getInvAdjAccounts()
@@ -1642,8 +1396,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[InvAdjAccounts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getInvAdjAccounts0()
@@ -1652,8 +1404,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[InvCounts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getInvCounts()
@@ -1662,8 +1412,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[InvCounts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getInvCounts0()
@@ -1672,8 +1420,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[InvSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getInvSetups()
@@ -1682,8 +1428,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[InvSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getInvSetups0()
@@ -1692,8 +1436,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[InvTransfers]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getInvTransfers()
@@ -1702,8 +1444,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[InvTransfers0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getInvTransfers0()
@@ -1712,8 +1452,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Items]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getItems()
@@ -1722,8 +1460,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Items0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getItems0()
@@ -1732,8 +1468,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ItemGroups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getItemGroups()
@@ -1742,8 +1476,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ItemGroups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getItemGroups0()
@@ -1752,8 +1484,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ItemMcuExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getItemMcuExts()
@@ -1762,8 +1492,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ItemMcuExts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getItemMcuExts0()
@@ -1772,8 +1500,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ItemTypes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getItemTypes()
@@ -1782,8 +1508,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ItemTypes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getItemTypes0()
@@ -1792,8 +1516,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[LaborLuarXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getLaborLuarXts()
@@ -1802,8 +1524,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Locations]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getLocations()
@@ -1812,8 +1532,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Locations0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getLocations0()
@@ -1822,8 +1540,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[MaritalStatuses]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMaritalStatuses()
@@ -1832,8 +1548,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[MaritalStatuses0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMaritalStatuses0()
@@ -1842,8 +1556,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[MarketingCardExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMarketingCardExts()
@@ -1852,8 +1564,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[MarketingVisites]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMarketingVisites()
@@ -1862,8 +1572,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[MarketingVisites0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMarketingVisites0()
@@ -1872,8 +1580,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[McuExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMcuExts()
@@ -1882,8 +1588,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[McuExts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMcuExts0()
@@ -1892,8 +1596,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[MedStatuses]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMedStatuses()
@@ -1902,8 +1604,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[MedStatuses0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMedStatuses0()
@@ -1912,8 +1612,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[MfgSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMfgSetups()
@@ -1922,8 +1620,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[MfgSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMfgSetups0()
@@ -1932,8 +1628,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Morders]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMorders()
@@ -1942,8 +1636,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Morders0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMorders0()
@@ -1952,8 +1644,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Mreceipts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMreceipts()
@@ -1962,8 +1652,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Mreceipts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getMreceipts0()
@@ -1972,8 +1660,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NInvAdjs]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNInvAdjs()
@@ -1982,8 +1668,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NInvAdjs0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNInvAdjs0()
@@ -1992,8 +1676,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NInvAdjAccounts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNInvAdjAccounts()
@@ -2002,8 +1684,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NInvAdjAccounts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNInvAdjAccounts0()
@@ -2012,8 +1692,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NInvCounts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNInvCounts()
@@ -2022,8 +1700,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NInvCounts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNInvCounts0()
@@ -2032,8 +1708,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NInvSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNInvSetups()
@@ -2042,8 +1716,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NInvSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNInvSetups0()
@@ -2052,8 +1724,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NInvTransfers]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNInvTransfers()
@@ -2062,8 +1732,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NInvTransfers0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNInvTransfers0()
@@ -2072,8 +1740,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NItems]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNItems()
@@ -2082,8 +1748,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NItems0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNItems0()
@@ -2092,8 +1756,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NItemGroups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNItemGroups()
@@ -2102,8 +1764,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NItemGroups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNItemGroups0()
@@ -2112,8 +1772,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NItemTypes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNItemTypes()
@@ -2122,8 +1780,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NItemTypes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNItemTypes0()
@@ -2132,8 +1788,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NPorders]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNPorders()
@@ -2142,8 +1796,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NPorders0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNPorders0()
@@ -2152,8 +1804,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NPreceipts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNPreceipts()
@@ -2162,8 +1812,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NPreceipts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNPreceipts0()
@@ -2172,8 +1820,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NPurchaseSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNPurchaseSetups()
@@ -2182,8 +1828,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NPurchaseSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNPurchaseSetups0()
@@ -2192,8 +1836,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NUoms]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNUoms()
@@ -2202,8 +1844,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NUoms0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNUoms0()
@@ -2212,8 +1852,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NWarehouses]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNWarehouses()
@@ -2222,8 +1860,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NWarehouses0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNWarehouses0()
@@ -2232,8 +1868,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Nationalities]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNationalities()
@@ -2242,8 +1876,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Nationalities0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNationalities0()
@@ -2252,8 +1884,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NurseCareNotes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNurseCareNotes()
@@ -2262,8 +1892,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[NurseCareVsigns]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getNurseCareVsigns()
@@ -2272,8 +1900,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Occupations]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOccupations()
@@ -2282,8 +1908,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Occupations0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOccupations0()
@@ -2292,8 +1916,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[OccupationXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOccupationXts()
@@ -2302,8 +1924,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[OccupationXts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOccupationXts0()
@@ -2312,8 +1932,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[OkupasiFileXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOkupasiFileXts()
@@ -2322,8 +1940,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[OkupasiFileXts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOkupasiFileXts0()
@@ -2332,8 +1948,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[OkupasiPatientXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOkupasiPatientXts()
@@ -2342,8 +1956,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[OkupasiPatientXts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOkupasiPatientXts0()
@@ -2352,8 +1964,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[OkupasiPayByXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOkupasiPayByXts()
@@ -2362,8 +1972,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[OkupasiPhotoXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOkupasiPhotoXts()
@@ -2372,8 +1980,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[OkupasiXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOkupasiXts()
@@ -2382,8 +1988,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[OkupasiXts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getOkupasiXts0()
@@ -2392,8 +1996,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Patients]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPatients()
@@ -2402,8 +2004,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Patients0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPatients0()
@@ -2412,8 +2012,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PatientGroups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPatientGroups()
@@ -2422,8 +2020,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PatientGroups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPatientGroups0()
@@ -2432,8 +2028,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PatientTypes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPatientTypes()
@@ -2442,8 +2036,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PatientTypes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPatientTypes0()
@@ -2452,8 +2044,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PayBies]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPayBies()
@@ -2462,8 +2052,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PayBies0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPayBies0()
@@ -2472,8 +2060,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PayByItemPriceMcuExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPayByItemPriceMcuExts()
@@ -2482,8 +2068,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Payments]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPayments()
@@ -2492,8 +2076,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Payments0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPayments0()
@@ -2502,8 +2084,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PersonalRelations]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPersonalRelations()
@@ -2512,8 +2092,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PersonalRelations0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPersonalRelations0()
@@ -2522,8 +2100,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PhoneExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPhoneExts()
@@ -2532,8 +2108,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PhoneExts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPhoneExts0()
@@ -2542,8 +2116,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PicPays]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPicPays()
@@ -2552,8 +2124,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Porders]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPorders()
@@ -2562,8 +2132,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Porders0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPorders0()
@@ -2572,8 +2140,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Preceipts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPreceipts()
@@ -2582,8 +2148,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Preceipts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPreceipts0()
@@ -2592,8 +2156,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Provinces]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getProvinces()
@@ -2602,8 +2164,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Provinces0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getProvinces0()
@@ -2612,8 +2172,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PurchaseSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPurchaseSetups()
@@ -2622,8 +2180,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[RadiologiFilmXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getRadiologiFilmXts()
@@ -2632,8 +2188,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[RadiologiFilmXts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getRadiologiFilmXts0()
@@ -2642,8 +2196,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ReferenceTypes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getReferenceTypes()
@@ -2652,8 +2204,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ReferenceTypes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getReferenceTypes0()
@@ -2662,8 +2212,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[RegSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getRegSetups()
@@ -2672,8 +2220,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[RegSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getRegSetups0()
@@ -2682,8 +2228,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Registrations]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getRegistrations()
@@ -2692,8 +2236,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Registrations0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getRegistrations0()
@@ -2702,8 +2244,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[RegistrationFills]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getRegistrationFills()
@@ -2712,8 +2252,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[RegistrationFills0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getRegistrationFills0()
@@ -2722,8 +2260,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Religions]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getReligions()
@@ -2732,8 +2268,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Religions0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getReligions0()
@@ -2742,8 +2276,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Reports]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getReports()
@@ -2752,8 +2284,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Reports0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getReports0()
@@ -2762,8 +2292,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ReportAccesses]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getReportAccesses()
@@ -2772,8 +2300,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Resources]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getResources()
@@ -2782,8 +2308,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Resources0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getResources0()
@@ -2792,8 +2316,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ResourceGroups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getResourceGroups()
@@ -2802,8 +2324,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ResourceGroups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getResourceGroups0()
@@ -2812,8 +2332,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ResourceTypes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getResourceTypes()
@@ -2822,8 +2340,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ResourceTypes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getResourceTypes0()
@@ -2832,8 +2348,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ResponeTimePoliXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getResponeTimePoliXts()
@@ -2842,8 +2356,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ResponeTimePoliXts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getResponeTimePoliXts0()
@@ -2852,8 +2364,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[SalesSetups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSalesSetups()
@@ -2862,8 +2372,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[SalesSetups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSalesSetups0()
@@ -2872,8 +2380,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Salesmen]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSalesmen()
@@ -2882,8 +2388,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Salesmen0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSalesmen0()
@@ -2892,8 +2396,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Salutations]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSalutations()
@@ -2902,8 +2404,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Salutations0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSalutations0()
@@ -2912,8 +2412,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ScrtPolicies]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getScrtPolicies()
@@ -2922,8 +2420,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ScrtPolicies0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getScrtPolicies0()
@@ -2932,8 +2428,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Policy]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPolicy()
@@ -2942,8 +2436,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Group]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getGroup()
@@ -2952,8 +2444,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Policy0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPolicy0()
@@ -2962,8 +2452,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[CreatedUser]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCreatedUser()
@@ -2972,8 +2460,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ScrtUsers]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getScrtUsers()
@@ -2982,8 +2468,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ModifiedUser]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getModifiedUser()
@@ -2992,8 +2476,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ScrtUsers0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getScrtUsers0()
@@ -3002,8 +2484,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ServiceExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getServiceExts()
@@ -3012,8 +2492,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ServiceExts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getServiceExts0()
@@ -3022,8 +2500,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Sexes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSexes()
@@ -3032,8 +2508,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Sexes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSexes0()
@@ -3042,8 +2516,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Shipments]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getShipments()
@@ -3052,8 +2524,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Shipments0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getShipments0()
@@ -3062,8 +2532,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Sorders]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSorders()
@@ -3072,8 +2540,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Sorders0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSorders0()
@@ -3082,8 +2548,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Sorders1]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSorders1()
@@ -3092,8 +2556,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Staff]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getStaff()
@@ -3102,8 +2564,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Staff0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getStaff0()
@@ -3112,8 +2572,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[StaffCutiXts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getStaffCutiXts()
@@ -3122,8 +2580,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[StaffCutiXts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getStaffCutiXts0()
@@ -3132,8 +2588,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[StaffGroups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getStaffGroups()
@@ -3142,8 +2596,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[StaffGroups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getStaffGroups0()
@@ -3152,8 +2604,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[StaffStatusScheduleExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getStaffStatusScheduleExts()
@@ -3162,8 +2612,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[StaffStatusScheduleExts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getStaffStatusScheduleExts0()
@@ -3172,8 +2620,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[StaffTypes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getStaffTypes()
@@ -3182,8 +2628,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[StaffTypes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getStaffTypes0()
@@ -3192,8 +2636,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[SubUnits]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSubUnits()
@@ -3202,8 +2644,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[SubUnits0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSubUnits0()
@@ -3212,8 +2652,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Subdistricts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSubdistricts()
@@ -3222,8 +2660,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Subdistricts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSubdistricts0()
@@ -3232,8 +2668,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Supervisors]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSupervisors()
@@ -3242,8 +2676,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Supervisors0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSupervisors0()
@@ -3252,8 +2684,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Supervisors1]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSupervisors1()
@@ -3262,8 +2692,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Users]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getUsers()
@@ -3272,8 +2700,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Surgeries]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSurgeries()
@@ -3282,8 +2708,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Surgeries0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSurgeries0()
@@ -3292,8 +2716,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[SystemParams]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getSystemParams()
@@ -3302,8 +2724,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Taxes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getTaxes()
@@ -3312,8 +2732,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Taxes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getTaxes0()
@@ -3322,8 +2740,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[TermPayments]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getTermPayments()
@@ -3332,8 +2748,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[TermPayments0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getTermPayments0()
@@ -3342,8 +2756,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[TindakanOpExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getTindakanOpExts()
@@ -3352,8 +2764,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[TindakanOpExts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getTindakanOpExts0()
@@ -3362,8 +2772,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Units]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getUnits()
@@ -3372,8 +2780,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Units0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getUnits0()
@@ -3382,8 +2788,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Uoms]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getUoms()
@@ -3392,8 +2796,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Uoms0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getUoms0()
@@ -3402,8 +2804,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ValueEditFarmasiExts]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getValueEditFarmasiExts()
@@ -3412,8 +2812,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ValueEditFarmasiExts0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getValueEditFarmasiExts0()
@@ -3422,8 +2820,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[VenGroups]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getVenGroups()
@@ -3432,8 +2828,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[VenGroups0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getVenGroups0()
@@ -3442,8 +2836,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[VenTypes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getVenTypes()
@@ -3452,8 +2844,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[VenTypes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getVenTypes0()
@@ -3462,8 +2852,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Vendors]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getVendors()
@@ -3472,8 +2860,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Vendors0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getVendors0()
@@ -3482,8 +2868,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Villages]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getVillages()
@@ -3492,8 +2876,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Villages0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getVillages0()
@@ -3502,8 +2884,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Warehouses]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getWarehouses()
@@ -3512,8 +2892,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Warehouses0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getWarehouses0()
@@ -3522,8 +2900,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Zipcodes]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getZipcodes()
@@ -3532,8 +2908,6 @@ class ScrtUser extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Zipcodes0]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getZipcodes0()

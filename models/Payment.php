@@ -8,19 +8,19 @@ use Yii;
  * This is the model class for table "payment".
  *
  * @property int $payment_id
- * @property string|null $payment_name
- * @property string|null $payment_description
- * @property int|null $customer_id
- * @property resource|null $notes
- * @property int|null $created_user_id
- * @property string|null $created_time
- * @property int|null $modified_user_id
- * @property string|null $modified_time
- * @property int|null $cash
- * @property int|null $rounding
- * @property int|null $disabled
- * @property int|null $only_for_customer
- * @property int|null $self_payment
+ * @property string $payment_name
+ * @property string $payment_description
+ * @property int $customer_id
+ * @property resource $notes
+ * @property int $created_user_id
+ * @property string $created_time
+ * @property int $modified_user_id
+ * @property string $modified_time
+ * @property int $cash
+ * @property int $rounding
+ * @property int $disabled
+ * @property int $only_for_customer
+ * @property int $self_payment
  *
  * @property BillingPmtDet[] $billingPmtDets
  * @property DownPayment[] $downPayments
@@ -80,8 +80,6 @@ class Payment extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[BillingPmtDets]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getBillingPmtDets()
@@ -90,8 +88,6 @@ class Payment extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[DownPayments]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getDownPayments()
@@ -100,8 +96,6 @@ class Payment extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[PayBies]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getPayBies()
@@ -110,8 +104,6 @@ class Payment extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[Customer]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCustomer()
@@ -120,8 +112,6 @@ class Payment extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[CreatedUser]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getCreatedUser()
@@ -130,8 +120,6 @@ class Payment extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[ModifiedUser]].
-     *
      * @return \yii\db\ActiveQuery
      */
     public function getModifiedUser()
