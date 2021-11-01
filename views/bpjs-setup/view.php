@@ -1,0 +1,47 @@
+<?php
+
+use yii\helpers\Html;
+use yii\widgets\DetailView;
+
+/* @var $this yii\web\View */
+/* @var $model app\models\BpjsSetup */
+
+$this->title = $model->action_id;
+$this->params['breadcrumbs'][] = ['label' => 'Bpjs Setups', 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
+\yii\web\YiiAsset::register($this);
+?>
+
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <?= Html::a('Update', ['update', 'id' => $model->action_id], ['class' => 'btn btn-primary']) ?>
+                        <?= Html::a('Delete', ['delete', 'id' => $model->action_id], [
+                            'class' => 'btn btn-danger',
+                            'data' => [
+                                'confirm' => 'Are you sure you want to delete this item?',
+                                'method' => 'post',
+                            ],
+                        ]) ?>
+                    </p>
+                    <?= DetailView::widget([
+                        'model' => $model,
+                        'attributes' => [
+                            'action_id',
+                            'description',
+                            'base_url:url',
+                            'field_name',
+                        ],
+                    ]) ?>
+                </div>
+                <!--.col-md-12-->
+            </div>
+            <!--.row-->
+        </div>
+        <!--.card-body-->
+    </div>
+    <!--.card-->
+</div>
